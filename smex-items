@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ global-auto-revert-mode
  eval-buffer
  nodejs-repl
  customize-group
  fundamental-mode
  cd
  5x5
- arp
 )
 
 ;; ----- smex-data -----
@@ -16,4 +16,5 @@
  (eval-buffer . 5)
  (customize-group . 1)
  (nodejs-repl . 1)
+ (global-auto-revert-mode . 3)
 )

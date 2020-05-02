@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ counsel-git
  customize-group
  global-auto-revert-mode
  eval-buffer
  nodejs-repl
  fundamental-mode
  cd
- 5x5
 )
 
 ;; ----- smex-data -----
@@ -17,4 +17,5 @@
  (customize-group . 2)
  (nodejs-repl . 1)
  (global-auto-revert-mode . 3)
+ (counsel-git . 3)
 )

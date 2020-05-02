@@ -6,10 +6,9 @@
 (global-set-key (kbd "<f1> f") 'counsel-describe-function)
 (global-set-key (kbd "<f1> v") 'counsel-describe-variable)
 
-
-
 ;; 将init.el绑定到快捷键F5
 (global-set-key (kbd "<f5>") 'open-init-file)
 
+(global-set-key (kbd "C-c p f") 'counsel-git)
 
 (provide 'init-keybindings)

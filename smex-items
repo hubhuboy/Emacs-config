@@ -1,0 +1,19 @@
+
+;; ----- smex-history -----
+(
+ eval-buffer
+ nodejs-repl
+ customize-group
+ fundamental-mode
+ cd
+ 5x5
+ arp
+)
+
+;; ----- smex-data -----
+(
+ (fundamental-mode . 1)
+ (eval-buffer . 5)
+ (customize-group . 1)
+ (nodejs-repl . 1)
+)

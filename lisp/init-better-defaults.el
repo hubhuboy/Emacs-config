@@ -1,0 +1,37 @@
+;; 关闭顶底声音
+(setq ring-bell-function 'ignore)
+
+(global-auto-revert-mode t)
+
+;;\ 用短名字替代长名字
+;;| (abbrev-mode -1)
+;;| (define-abbrev-table 'global-abbrev-table '(
+;;|					    ;; signature
+;;|					    ("short-name" "longlongname")
+;;/					    ))
+
+;; 关闭自动备份功能.~后缀的文件
+(setq make-backup-files nil)
+;; (关闭自动保存副本)
+;; (setq auto-save-default nil)
+
+;; preview the recent file
+(require 'recentf)
+(recentf-mode 1)
+(setq recentf-max-menu-item 10)
+(global-set-key "\C-x\ \C-r" 'recentf-open-files)
+
+;; 括号展示
+(add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
+
+;; 解决org文件卡顿问题
+(dolist (charset '(kana han cjk-misc bopomofo))
+    (set-fontset-font (frame-parameter nil 'font) charset
+                      (font-spec :family "Microsoft YaHei" :size 18)))
+
+;; 替代当前选中的字符
+(delete-selection-mode t)
+;; no make backup: (setq make-backfile-files nill)
+
+
+(provide 'init-better-defaults)

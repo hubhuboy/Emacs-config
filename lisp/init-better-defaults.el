@@ -13,7 +13,7 @@
 ;; 关闭自动备份功能.~后缀的文件
 (setq make-backup-files nil)
 ;; (关闭自动保存副本)
-;; (setq auto-save-default nil)
+(setq auto-save-default nil)
 
 ;; preview the recent file
 (require 'recentf)
@@ -24,14 +24,15 @@
 ;; 括号展示
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
 
-;; 解决org文件卡顿问题
+;; 解决org文件字体卡顿问题
 (dolist (charset '(kana han cjk-misc bopomofo))
     (set-fontset-font (frame-parameter nil 'font) charset
                       (font-spec :family "Microsoft YaHei" :size 18)))
 
 ;; 替代当前选中的字符
 (delete-selection-mode t)
-;; no make backup: (setq make-backfile-files nill)
+
+;; no make backup:(setq make-backfile-files nil)
 
 
 (provide 'init-better-defaults)

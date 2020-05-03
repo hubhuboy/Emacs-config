@@ -22,4 +22,3 @@
 ;; 配置文件默认代码
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 
-

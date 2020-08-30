@@ -27,6 +27,9 @@
 		      monokai-theme
 		      ;; solarized-theme
 		      smex
+		      ;;the package is for ccpp
+		      auto-complete
+		      auto-complete-clang
 		      ) "Default packages")
 
 (setq package-selected-packages my/packages)
@@ -51,8 +54,8 @@
 (load-theme 'monokai t)
 
 ;; delete the "   "
-;;--(require 'hungry-delete)
-;;--(global-hungry-delete-mode)
+(require 'hungry-delete)
+(global-hungry-delete-mode)
 
 
 ;;智能排序序号

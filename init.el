@@ -18,6 +18,7 @@
 (require 'init-better-defaults)
 (require 'init-org)
 (require 'init-keybindings)
+;;(require 'init-CCpp-config)
 
 ;; 配置文件默认代码
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))

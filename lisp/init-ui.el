@@ -7,7 +7,7 @@
 ;; common cursor(光标)
 (setq-default cursor-type 'bar)
 ;;display all screen
-(setq initial-frame-alist (quote ((fullscreen . maximized))))
+;;(setq initial-frame-alist (quote ((fullscreen . maximized))))
 ;; 显示高亮当前行
 (global-hl-line-mode)
 

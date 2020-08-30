@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ help-with-tutorial
+ customize-face
+ auto-fill-mode
+ text-mode
+ replace-string
+ erase-buffer
  counsel-git
- customize-group
- global-auto-revert-mode
- eval-buffer
- nodejs-repl
- fundamental-mode
- cd
 )
 
 ;; ----- smex-data -----
@@ -18,4 +18,10 @@
  (nodejs-repl . 1)
  (global-auto-revert-mode . 3)
  (counsel-git . 3)
+ (help-with-tutorial . 6)
+ (erase-buffer . 1)
+ (customize-face . 4)
+ (replace-string . 1)
+ (text-mode . 1)
+ (auto-fill-mode . 7)
 )

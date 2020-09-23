@@ -29,6 +29,9 @@
 ;; 括号展示
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
 
+;; 自动换行
+(global-visual-line-mode 1)
+
 ;; 解决org文件字体卡顿问题
 (if(display-graphic-p)(dolist (charset '(kana han cjk-misc bopomofo))
     (set-fontset-font (frame-parameter nil 'font) charset

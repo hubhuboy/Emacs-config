@@ -1,5 +1,7 @@
 ;; Syntax highlighting in the document.org
 (require 'org)
+
+;; org文档中语法高亮
 (setq org-src-fontify-natively t)
 
 ;; config org日程mode

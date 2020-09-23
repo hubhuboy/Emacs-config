@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ replace-string
  help-with-tutorial
  customize-face
  auto-fill-mode
  text-mode
- replace-string
  erase-buffer
- counsel-git
+ eval-buffer
 )
 
 ;; ----- smex-data -----
@@ -21,7 +21,8 @@
  (help-with-tutorial . 6)
  (erase-buffer . 1)
  (customize-face . 4)
- (replace-string . 1)
+ (replace-string . 5)
  (text-mode . 1)
  (auto-fill-mode . 7)
+ (org-edit-src-code . 2)
 )
